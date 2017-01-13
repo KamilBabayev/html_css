@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+	<title> -=LAB=- </title>
+    <title>Practice</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+        <h1>LAB TASKS</h1>
+		(all steps must be completed in Centos6 and Centos7)<br><br><br>
+		
+		<form>
+  		<div class="new chkLabel">
+  			<label><input type="checkbox" /> 0. Recover lost root user password. assign root user's password as  admin123</label><br>
+            <label><input type="checkbox" /> 1. Login to system via root user. create admin oracle backup and operator users in system. Assign password to these users as their usernames</label><br>
+            <label><input type="checkbox" /> 2. Update  and reboot system</label><br>
+            <label><input type="checkbox" /> 3. Configure network of your system as bridge and obtain ip address from Wifi-router</label><br>
+            <label><input type="checkbox" /> 4. Change ssh port of system from 22 to 59222, deny ssh access to root user. you can connect to host via ssh using new port. Test that root user can not connect to system via ssh. Login via orginary user and switch to root user</label><br>
+            <label><input type="checkbox" /> 5. Create /opt/logbackups named directory and write script  which will copy system ssh access log file to this directory in every 2 minutes. Do not keep more that 5 files in this directory. Keep only last 5 version of file.</label><br>
+            <label><input type="checkbox" /> 6. Add 1GB new disk to system. format with ext4 file system and mount to  /database directory permanently.</label><br>
+            <label><input type="checkbox" /> 7. Add new 1GB disk to system, make create 2 new LVM partition from this disk and mount them to /volume1 and /volume2 dirs permanently</label><br>
+            <label><input type="checkbox" /> 8. Users's(which added on 1st task) max password life must be 10 days, user must get warning 3 days before password expiration</label><br>
+            <label><input type="checkbox" /> 9. Add BACKUP="/home/%usernam%>/backup" named environmental variable for each separate user permanently. </label><br>
+            <label><input type="checkbox" /> 10. Compile NGINX web server from source code and install to system. start and test. </label><br>
+            <label><input type="checkbox" /> 11. Install apache web server. Run apache web server on port 8080. Prepare virtual hosts for www.test.local and www.lab.local  domains.  when we open each domain its content must be same as domain name</label><br>
+            <label><input type="checkbox" /> 12. Write script which will find web servers ip addresses and version in 192.168.1.0/24 network and will write result to /opt/webservers_report  file</label><br>
+			<label><input type="checkbox" /> 13. Write script which will run every 1 minute and  checks nginx and apache servers statuses, if one of them is stopped starts service.</label><br>
+            <label><input type="checkbox" /> 14. Mount iso image to your VM and mount it to /mnt dir.  and add /mnt dis as local rpm repo to OS></label><br>
+            <label><input type="checkbox" /> 15. Make sure  firewall is running and open permanent access for ports which you added on previous tasks</label><br>
+            <label><input type="checkbox" /> 16. Make sure selinux is in permissive status</label><br>
+            <label><input type="checkbox" /> 17. Make sure you can connect from Centos7 to Centos 6 without password and vice versa</label><br>
+            <label><input type="checkbox" /> 18. </label><br>
+            <label><input type="checkbox" /> 19. </label><br>
+            <label><input type="checkbox" /> 20. </label><br>
+           
+ 		 </div>
+    	</form>
+      </div>
+    </div>
+  </body>
+</html>
+
